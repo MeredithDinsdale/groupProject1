@@ -1,0 +1,43 @@
+.scene {
+  width: 80vw;
+  height: 37vw;
+  perspective: 600px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  border-radius: 20px;
+}
+
+.cardFace {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+
+.cardFaceFront {
+  background: rgb(208, 228, 233);
+  border-radius: 20px;
+  border-color: rgb(59, 58, 58);
+}
+
+.cardFaceBack {
+  background: rgb(86, 240, 150);
+  border-radius: 20px;
+  transform: rotateY( 180deg );
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+h1 {font-size: 8vw;
+    color: black;
+  }
+
