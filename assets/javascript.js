@@ -1,4 +1,6 @@
-$("#query").on("click", function(event) {
-  console.log('clicked');
-  $("#flipMe").toggleClass('card card.is-flipped');
-})
+// $("#query").on("click", function(event) {
+//   console.log('clicked');
+  $("#card").flip({
+    axis: 'x',
+    trigger: 'click',
+  });
