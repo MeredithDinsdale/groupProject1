@@ -9,10 +9,10 @@ img {width: 500px}
    height: 30vw;
   position: relative;
 
-  border-radius: 20px;
+   border-radius: 20px;
 }
 
-/* .card_face {
+ /* .card_face {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -20,23 +20,22 @@ img {width: 500px}
   border-radius: 20px;
 } */
 
-.front {
+ .front {
   background: rgb(250, 251, 252);
   border-radius: 20px;
   border-color: rgb(59, 58, 58);
 }
 
-.back {
+ .back {
   background: rgb(86, 240, 150);
   border-radius: 20px;
 
-}
+ }
 
-/* .card.is-flipped {
+ /* .card.is-flipped {
   transform: rotateY(180deg);
 } */
 
-h1 {font-size: 8vw;
+ h1 {font-size: 8vw;
     color: black;
   }
-
