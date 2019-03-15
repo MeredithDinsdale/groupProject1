@@ -12,7 +12,7 @@
 
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-transparent" id="replaceNav">
-        <a class="navbar-brand" href="#"><i class="fas fa-globe-africa"></i> GIA</a>
+        <a class="navbar-brand" href="index.html"><i class="fas fa-globe-africa"></i> GIA</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -68,90 +68,65 @@
 
 <div class="container mt-4" id="backOfCard">
     <div class="backContent p-5" id="backContent">
-       <div class="row">
-           <div class="col-lg" id="backSide">
-               <h5>Country</h5>
-           </div>
-           <div class="col-lg" id="backSide">
-               <span id="country"></span>
-           </div>
-           <div class="col-lg" id="backSide">
-               <h5>Flag</h5>
-           </div>
-           <div class="col-lg" id="backSide">
-               <span id="flag"></span>
-           </div>
-       </div>
-       <div class="row">
-            <div class="col-lg" id="backSide">
-                <h5>Language</h5>
+        <div class="row">
+            <div class="col-lg-6">
+                <p>Country</p><span id="country"></span>
+                <br>
+                <p>Language</p><span id="language"></span>
+                <br>
+                <p>Head of State</p><span id="headOfState"></span>
+                <br>
+                <p>Religion</p><span id="religion"></span>
+                <br>
+                <p>Politics</p><span id="politics"></span>
+                <br>
             </div>
-            <div class="col-lg" id="backSide">
-                <span id="language"></span>
+            <div class="col-lg-6">
+                <p>Flag</p><span id="flag"></span>
+                <br>
+                <p>Weather</p><span id="weather"></span>
+                <br>
+                <p>Currency</p><span id="currency"></span>
+                <br>
+                <p>Travel Advisories</p><span id="travelAdvisories"></span>
+                <br>
+                <p>Travel Requirements</p><span id="travelRequirements"></span>
             </div>
-            <div class="col-lg" id="backSide">
-                <h5>Weather</h5>
-            </div>
-            <div class="col-lg" id="backSide">
-                <span id="weather"></span>
-            </div>
-       </div>
-       <div class="row">
-            <div class="col-lg" id="backSide">
-                <h5>Head of State</h5>
-            </div>
-            <div class="col-lg" id="backSide">
-                <span id="headOfState"></span>
-            </div>
-            <div class="col-lg" id="backSide">
-                <h5>Currency</h5>
-            </div>
-            <div class="col-lg" id="backSide">
-                <span id="currency"></span>
-            </div>
-       </div>
-       <div class="row">
-            <div class="col-lg" id="backSide">
-                <h5>Politics</h5>
-            </div>
-            <div class="col-lg" id="backSide">
-                <span id="politics"></span>
-            </div>
-            <div class="col-lg" id="backSide">
-                <h5>Travel Requirements</h5>
-            </div>
-            <div class="col-lg" id="backSide">
-                <span id="travelRequirements"></span>
-            </div>
-       </div>
-       <div class="row">
-            <div class="col-lg" id="backSide">
-                <h5>Religion</h5>
-            </div>
-            <div class="col-lg" id="backSide">
-                <span id="religion"></span>
-            </div>
-            <div class="col-lg" id="backSide">
-                <h5>Travel Advisories</h5>
-            </div>
-            <div class="col-lg" id="backSide">
-                <span id="flag"></span>
-            </div>
-       </div>
-    <div class="row mb-3">
-        <div class="col-lg text-center">
-            <button class="btn"><i class="fas fa-map-pin"></i>
-
-                 Add to My Places</button>
         </div>
-        <div class="col-lg text-center">
-            <button class="btn" id="checkInBtn"><i class="fas fa-map-marker-alt"></i>
-
-                 Check in!</button>
-                 <p id="checkInCount"></p>
-        </div>
-    </div>
-      
+       <div class="row">
+           <div class="col-lg">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    Click for more information!
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <span id="moreInfo"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    Click for more information!
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <span id="moreInfoTwo"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
            </div>
        </div>
     </div> 
