@@ -7,55 +7,9 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans333:200|Raleway:300|Roboto:300" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <style>
 
-    body {background-image: url("images/giaBackground.jpg");
-          background-size: cover;
-          background-position: center;
-          background-attachment: fixed;}
-    img {
-        width: 500px;
-        padding-top: 10px;
-    }
- 
-    #backSide {
-        padding: 10px;
-        margin-block-start: 10px;
-        margin-block-end: 10px;
-        /* border: solid; */
-        border-color: black;
-    }
-
-    #frontOfCard {margin-left: auto;
-                  margin-right: auto;
-                  display: block;
-                  width: 80vw;
-                  height: 40vw;
-                  background-color:transparent;
-                  border-style: 2px;
-                  border-color: darkslategrey;
-                  border-radius: 25px;
-                  
-                  }
-
-    #backOfCard {margin-left: auto;
-                margin-right: auto;
-                display: block;
-                width: 80vw;
-                height: 40vw;
-                background-color: aliceblue;
-                border-style: 2px;
-                border-color: darkslategrey;
-                border-radius: 25px;
-            }
-        .backContent {margin: auto;}
-
-        .nav-item {color: white;}
-        #firstNav a {color: rgb(214, 252, 220);}
-        #replaceNav a {color: rgb(214, 252, 220);}
-    
-    </style>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-transparent" id="replaceNav">
         <a class="navbar-brand" href="#"><i class="fas fa-globe-africa"></i> GIA</a>
@@ -65,20 +19,20 @@
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item" style="color: white;">
+            <li class="nav-item">
               <a class="nav-link" href="#">My Places</a>
             </li>
            
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Explore" aria-label="search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i>
+            <input class="form-control mr-sm-2" id="query" type="search" placeholder="Explore" aria-label="search">
+            <button class="btn btnQuery btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i>
             </button>
           </form>
         </div>
       </nav>
       <nav class="navbar navbar-expand-lg navbar-light bg-transparent" id="firstNav">
-            <a class="navbar-brand" href="#"><i class="fas fa-globe-africa"></i> GIA</a>
+            <a class="navbar-brand" href="index.html"><i class="fas fa-globe-africa"></i> GIA</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -95,7 +49,7 @@
           </nav>
 
 
-<div class="container text-center" id="frontOfCard">
+<div class="container text-center mt-4" id="frontOfCard">
     <div class="frontContent p-5">
     <div class="row">
         <div class="col">
@@ -105,14 +59,14 @@
     <div class="row">
         <div class="col">
                 <input type="text" placeholder="Explore" id="query"> 
-                <button class="btn"><i class="fas fa-search"></i></button>
+                <button class="btnQuery btn"><i class="fas fa-search"></i></button>
         </div>
     </div>
     </div>
 </div>
 
 
-<div class="container" id="backOfCard">
+<div class="container mt-4" id="backOfCard">
     <div class="backContent p-5" id="backContent">
        <div class="row">
            <div class="col-lg" id="backSide">
@@ -184,59 +138,26 @@
                 <span id="flag"></span>
             </div>
        </div>
-       <!-- <div class="row">
-           <div class="col-lg">
-                <div class="accordion" id="accordionExample">
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                                        aria-expanded="true" aria-controls="collapseOne">
-                                        Click for more information!
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    <span id="moreInfo"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingTwo">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
-                                        aria-expanded="false" aria-controls="collapseTwo">
-                                        Click for more information!
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    <span id="moreInfoTwo"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingThree">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
-                                        aria-expanded="false" aria-controls="collapseThree">
-                                        Click for more information!
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    <span id="moreInfoThree"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
+    <div class="row mb-3">
+        <div class="col-lg text-center">
+            <button class="btn"><i class="fas fa-map-pin"></i>
+
+                 Add to My Places</button>
+        </div>
+        <div class="col-lg text-center">
+            <button class="btn" id="checkInBtn"><i class="fas fa-map-marker-alt"></i>
+
+                 Check in!</button>
+                 <p id="checkInCount"></p>
+        </div>
+    </div>
+      
            </div>
        </div>
     </div> 
 </div>
+
+<br><br>
        
 <div class="container longContent">
    
@@ -247,20 +168,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
-<script>
-$( document ).ready(function() {
-$('#backOfCard').hide();
-$('#replaceNav').hide();
-});
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="assets/javascript.js"></script>
 
 
-$('.btn').click(function(){
-    console.log('button has been clicked');
-    $('#frontOfCard').slideUp('#backOfCard');
-    $('#backOfCard').show();
-    $('#firstNav').hide();  
-    $('#replaceNav').show();
-})
-</script>
 </body>
 </html>
