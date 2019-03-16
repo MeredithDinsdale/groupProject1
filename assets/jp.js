@@ -9,7 +9,7 @@
             var countryData = "";
             function processCountryNameCodeData(country_code_or_name) {
                 // AJAX - call to 'countries.json' file stored locally (on our github server)
-                $.getJSON("jpAssets/data/countries.json", function(json) {
+                $.getJSON("./jpAssets/data/countries.json", function(json) {
                     console.log("All Countries:");
                     console.log(json);
             
