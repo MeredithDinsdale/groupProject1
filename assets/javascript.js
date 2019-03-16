@@ -14,6 +14,16 @@
         let country = $('#query').val();
         $('#checkInBtn').addClass(country);
         console.log(country);
+        $('#country').text(country);
+        event.preventDefault();
+
+        var country_code = $("#query").val();
+
+        var flag_url = "https://www.countryflags.io/" + country_code + "/flat/64.png";
+
+        var flagImage= $("<img>").attr("src", flag_url);
+
+        $('#flag').append(flagImage);
 
         var config = {
           apiKey: "AIzaSyARrHb0nP7XvLyaxVpm7MTrJ79C_SuyFHk",
@@ -44,8 +54,14 @@
         function(errorObject) {
         console.log("The read failed: " + errorObject.code);
         });
+
+       
+        
+
+         
+      });
       
-    })
+    
 
   
   

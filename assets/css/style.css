@@ -1,5 +1,5 @@
 
-img {width: 500px}
+
 .card .front {
   width: 75vw;
    height: 30vw;
@@ -24,9 +24,27 @@ img {width: 500px}
  /* .card.is-flipped {
   transform: rotateY(180deg);
 } */
+.btn:hover {color: white;
+  font-family: "raleway", sans-serif;
+  background-color: rgb(21, 97, 102);
+  transform: scale(1.1);
+  transition: .5s;}
+  
+  .btn {
+      background-color: transparent;
+      border-color: rgb(47, 71, 73);
+      background-color: rgba(58, 138, 125, 0.452);
+      color: white;
+      font-size: 20px;
+      text-shadow: 1px 1px rgb(54, 54, 54);
+      font-family: "raleway", sans-serif;
+      transform: scale(1);
+      transition: 1s;
+  }
 
- h1 {font-size: 8vw;
-    color: black;
+h1, h2, h3, h4 {color: white;
+                text-shadow: 1px 1px rgb(60, 61, 61);
+                font-family: 'Raleway', sans-serif;
   }
 
   .btn:hover {color: white;
@@ -51,7 +69,7 @@ img {width: 500px}
       background-size: cover;
       background-position: center;
       background-attachment: fixed;}
-img {
+#imgLogo {
     width: 500px;
     padding-top: 10px;
 }
@@ -83,9 +101,11 @@ img {
             color: white;
             font-family: "roboto", sans-serif;
             text-shadow: 1px 1px rgb(53, 57, 61);
-            background-color: rgba(240, 248, 255, 0.404);
+            background-image: linear-gradient(-90deg, rgba(93, 232, 241, 0.459), rgba(90, 253, 204, 0.377));;
             border-style: 2px;
-            border-color: darkslategrey;
+            border-color: rgb(156, 177, 177);
+            border-style: outset;
+            border-width: 2px;
             border-radius: 25px;
         }
     .backContent {margin: auto;}
@@ -94,3 +114,4 @@ img {
     #firstNav a {color: rgb(214, 252, 220);}
     #replaceNav a {color: rgb(214, 252, 220);}
     
+  

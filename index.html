@@ -25,7 +25,7 @@
            
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" id="query" type="search" placeholder="Explore" aria-label="search">
+            <input class="form-control mr-sm-2" type="search" placeholder="Explore" aria-label="search">
             <button class="btn btnQuery btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i>
             </button>
           </form>
@@ -53,7 +53,7 @@
     <div class="frontContent p-5">
     <div class="row">
         <div class="col">
-            <img src="images/logo.png">
+            <img id="imgLogo" src="images/logo.png">
         </div>
     </div>
     <div class="row">
@@ -69,8 +69,8 @@
 <div class="container mt-4" id="backOfCard">
     <div class="backContent p-5" id="backContent">
         <div class="row">
-            <div class="col-lg-6">
-                <p>Country</p><span id="country"></span>
+            <div class="col-lg-5">
+                <h1 id="country"></h1>
                 <br>
                 <p>Language</p><span id="language"></span>
                 <br>
@@ -81,8 +81,8 @@
                 <p>Politics</p><span id="politics"></span>
                 <br>
             </div>
-            <div class="col-lg-6">
-                <p>Flag</p><span id="flag"></span>
+            <div class="col-lg-5">
+                <span id="flag"></span>
                 <br>
                 <p>Weather</p><span id="weather"></span>
                 <br>
@@ -92,7 +92,22 @@
                 <br>
                 <p>Travel Requirements</p><span id="travelRequirements"></span>
             </div>
+            <div class="col-lg-2 text-center">
+            <h5>Further Research</h5>
+            <br>
+            <h3><i class="fas fa-atlas"></i></h3>
+            <br>
+            <h3><i class="fab fa-wikipedia-w"></i></h3>
+            <br>
+            <button class='.btn'><i class="fas fa-map-marker-alt"></i>
+
+                 Check In</button>
+            <button class='.btn'><i class="fas fa-map-pin"></i> 
+
+                My Places</button>
+            </div>
         </div>
+       
        <div class="row">
            <div class="col-lg">
                 <div class="accordion" id="accordionExample">
