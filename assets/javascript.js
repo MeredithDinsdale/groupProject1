@@ -60,6 +60,14 @@
         console.log("The read failed: " + errorObject.code);
         });
 
+        $('#wikipedia').click(function () {
+          window.location = "https://en.wikipedia.org/wiki/"+ country;
+        })
+
+        $('#encyclopedia').click(function () {
+          window.location = "https://www.britannica.com/place/"+ country;
+        })
+
        
         
 

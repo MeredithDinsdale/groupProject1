@@ -98,5 +98,11 @@ body {
   border-style: none;
   font-family: "roboto", sans-serif;
 }
+
+#wikipedia, #encyclopedia {
+  background-color: transparent;
+  border-style: none;
+  color: white;
+}
     
   
