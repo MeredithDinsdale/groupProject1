@@ -2,6 +2,7 @@
   $( document ).ready(function() {
     $('#backOfCard').hide();
     $('#replaceNav').hide();
+    $('.card').hide();
     });
     
     
@@ -45,6 +46,10 @@
           clickCount: clickCounter
           });
         });
+
+        $('#currentEventsBtn').click(function() {
+          $('.card').fadeIn(400);
+        })
       
         database.ref().on("value", function(snapshot) {
         console.log(snapshot.val()); 
