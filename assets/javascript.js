@@ -35,4 +35,15 @@ function searchObj(code, myArray){
           return myArray[i];
       }
   }
+
 }
+
+///Firebase--- needs button ID &&&& HOW TO REF SPECIFIC STORAGE 
+var database = firebase.database();
+var placeCounter = 0; 
+$("#FIREBASE ").on("click", function() {
+  clickCounter++;
+  database.ref().set({
+    clickCount: clickCounter
+});
+
