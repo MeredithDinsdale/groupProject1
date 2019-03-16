@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans333:200|Raleway:300|Roboto:300" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    
+    
 
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-transparent" id="replaceNav">
@@ -21,7 +23,7 @@
           <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown">
 
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle"  href="#" id="myPlacesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   My Places
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -89,25 +91,24 @@
             <div class="col-lg-5">
                 <h1 id="country"></h1>
                 <br>
-                <p>Language</p><span id="language"></span>
+                <h4>Language</h4><p id="language"></p>
                 <br>
-                <p>Head of State</p><span id="headOfState"></span>
+                <h4>Head of State</h4><p id="headOfState"></p>
                 <br>
-                <p>Religion</p><span id="religion"></span>
+                <h4>Religion</h4><p id="religion"></p>
                 <br>
-                <button id="currentEventsBtn"><p>Current Events</p></button><span id="currentEvents"></span>
-                <br>
+            
             </div>
             <div class="col-lg-5">
                 <span id="flag"></span>
                 <br>
-                <p>Weather</p><span id="weather"></span>
+                <h4>Weather</h4><p id="weather">Upgrade to Pro for Weather!</p>
                 <br>
-                <p>Currency</p><span id="currency"></span>
+                <h4>Time Zone</h4><p id="timeZone"></p>
                 <br>
-                <p>Travel Advisories</p><span id="travelAdvisories"></span>
+                <h4>Travel Advisories</h4><p id="travelAdvisories"></p>
                 <br>
-                <p>Travel Requirements</p><span id="travelRequirements"></span>
+                
             </div>
             <div class="col-lg-2 text-center">
             <h5>Further Research</h5>
@@ -116,10 +117,11 @@
             <br>
             <button id="wikipedia"><h3 id=""><i class="fab fa-wikipedia-w"></i></h3></button>
             <br>
-            <button class='btn'><i class="fas fa-map-marker-alt"></i>
+            <button class='btn' id="checkInBtn"><i class="fas fa-map-marker-alt"></i>
 
-                 Check In</button> <br> <Br>
-            <button class='btn'><i class="fas fa-map-pin"></i> 
+                 Check In</button><p id="checkIns"></p><br>
+            <button class='btn' id="myPlacesBtn"><i class="fas fa-map-pin"></i> 
+                
 
                 My Places</button><br>
             </div>
@@ -134,7 +136,7 @@
 <br><br>
 
 
-<div class="container">
+<!-- <div class="container">
     <div class="row">
         <div class="col-lg">
                 <div class="accordion" id="accordionExample">
@@ -149,7 +151,7 @@
                         </div>
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                             <div class="card-body">
-                                <span id="moreInfo"></span>
+                                <span id="news"></span>
                             </div>
                         </div>
                     </div>
@@ -171,7 +173,7 @@
                 </div>
         </div>
     </div>
-</div>     
+</div>      -->
 
    
 
@@ -186,6 +188,7 @@
     <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
     <script src="assets/javascript.js"></script>
+    <script src="assets/jp.js"></script>
 
 
 
