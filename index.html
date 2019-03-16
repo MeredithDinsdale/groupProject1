@@ -1,162 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>        
+    </head>
 
-    <link href="assets/css/reset.css", rel="stylesheet" type="text/css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="assets/css/style.css", rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-
-
-    <title>GIA</title>
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans333:200|Raleway:300|Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="welcomeNav">
-        <a class="navbar-brand" href="#"><i class="fas fa-globe-africa"></i>
-
-          GIA</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent" id="replaceNav">
+        <a class="navbar-brand" href="index.html"><i class="fas fa-globe-africa"></i> GIA</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                My Places
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="myPlacesDropdown">
-                <a class="dropdown-item" href="#">France</a>
-                <a class="dropdown-item" href="#">Micronesia</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Tunisia</a>
-              </div>
-            </li>
-          </ul>
 
-        </div>
-      </nav>
-
-      <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light" id="innerNav">
-          <a class="navbar-brand" href="#"><i class="fas fa-globe-africa"></i>
-  
-            GIA</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              
-              <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   My Places
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">France</a>
-                  <a class="dropdown-item" href="#">Micronesia</a>
+                  <a class="dropdown-item" href="#"></a>
+                  <a class="dropdown-item" href="#"></a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Tunisia</a>
+                  <a class="dropdown-item" href="#"></a>
                 </div>
               </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Explore" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search-location"></i>
-              </button>
-            </form>
-          </div>
-        </nav> -->
-<div class="container">
-  <div class="row">
-      <div class="card text-center m-5" id="card">
-          <div class="front p-3">
-            <h1 class="logo"><img src="images/GIA .png"></h1>
-            <form class="mt-3 pt-3">
-              <h4>
-                <input id="search" type="text" value="">
-                <button id="query">
-                  <i class="fas fa-search-location"></i>
-                </button>
-              </h4>
-            </form>
-          </div>
-    
-          <div class="back p-3">
-              <div class="row">
-                  <div class="col-md-6">
-                    <h2 id="title">Country</h2>
-                  </div>
-                  <div class="col-md-6 text-right">
-                    <span id="flag">FLAG</span>
-                  </div>
-                </div>
-               
-                <div class="row">
-                    <div class="col-md-6">
-                      <span id="language">Language</span>
-                    </div>
-                    <div class="col-md-6 text-right">
-                      <span id="weather">Weather</span>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                      <span id="headOfState">Head of State</span>
-                    </div>
-                    <div class="col-md-6 text-right">
-                      <span id="currency">Currency</span>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                      <span id="politics">Politics</span>
-                    </div>
-                    <div class="col-md-6 text-right">
-                      <span id="travelRequirements">Travel Requirements</span>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                      <span id="religion">Religion</span>
-                    </div>
-                    <div class="col-md-6 text-right">
-                      <span id="travelAdvisories">Travel Advisories</span>
-                    </div>
-                </div>
-          </div>
+           
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Explore" aria-label="search">
+            <button class="btn btnQuery btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i>
+            </button>
+          </form>
         </div>
-  </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent" id="firstNav">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-globe-africa"></i> GIA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      My Places
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#"></a>
+                      <a class="dropdown-item" href="#"></a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"></a>
+                    </div>
+                  </li>
+               
+              </ul>
+              
+            </div>
+          </nav>
+
+
+<div class="container text-center mt-4" id="frontOfCard">
+    <div class="frontContent p-5">
+    <div class="row">
+        <div class="col">
+            <img id="imgLogo" src="images/logo.png">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+                <input type="text" placeholder="Explore" id="query"> 
+                <button class="btnQuery btn"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+    </div>
 </div>
-  
+
+
+<div class="container mt-4" id="backOfCard">
+    <div class="backContent p-5" id="backContent">
+        <div class="row">
+            <div class="col-lg-5">
+                <h1 id="country"></h1>
+                <br>
+                <p>Language</p><span id="language"></span>
+                <br>
+                <p>Head of State</p><span id="headOfState"></span>
+                <br>
+                <p>Religion</p><span id="religion"></span>
+                <br>
+                <button id="currentEventsBtn"><p>Current Events</p></button><span id="currentEvents"></span>
+                <br>
+            </div>
+            <div class="col-lg-5">
+                <span id="flag"></span>
+                <br>
+                <p>Weather</p><span id="weather"></span>
+                <br>
+                <p>Currency</p><span id="currency"></span>
+                <br>
+                <p>Travel Advisories</p><span id="travelAdvisories"></span>
+                <br>
+                <p>Travel Requirements</p><span id="travelRequirements"></span>
+            </div>
+            <div class="col-lg-2 text-center">
+            <h5>Further Research</h5>
+            <br>
+            <button id="encyclopedia"><h3><i class="fas fa-atlas"></i></h3></button>
+            <br>
+            <button id="wikipedia"><h3 id=""><i class="fab fa-wikipedia-w"></i></h3></button>
+            <br>
+            <button class='btn'><i class="fas fa-map-marker-alt"></i>
+
+                 Check In</button> <br> <Br>
+            <button class='btn'><i class="fas fa-map-pin"></i> 
+
+                My Places</button><br>
+            </div>
+
+        </div>
+    </div>
+</div>
+       
+     
+
+
+<br><br>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    Top Headlines
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <span id="moreInfo"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    Political Structure
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <span id="moreInfoTwo"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>     
+
    
 
-  <div class="container" id="longContent">
-    
-  </div>
 
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
-<script src="assets/javascript.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyAHFkpp7jnwXExN_D4nEuUR-MGjByoa2YA",
-    authDomain: "blub-5e8fa.firebaseapp.com",
-    databaseURL: "https://blub-5e8fa.firebaseio.com",
-    projectId: "blub-5e8fa",
-    storageBucket: "blub-5e8fa.appspot.com",
-    messagingSenderId: "176990029080"
-  };
-  firebase.initializeApp(config);
-</script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="assets/javascript.js"></script>
+
+
+
 </body>
 </html>
